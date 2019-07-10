@@ -1,0 +1,1127 @@
+/* chatbot.css v1.0 | 2019.07.02 | UX/UI, HyunHyun Lee */
+
+
+/* Reset 
+====================================================================*/
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    vertical-align: top;
+    -webkit-text-size-adjust: none;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+ul,
+ol,
+dl {
+    list-style: none;
+}
+
+img,
+video,
+embed {
+    max-width: 100%
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+input,
+select,
+button,
+textarea {
+    font-family: 'Malgun Gothic', Arial, sans-serif;
+    vertical-align: middle;
+    font-weight: normal;
+    outline: 0;
+}
+
+html {
+    height: 100%;
+    font-size: 10px;
+}
+
+body {
+    height: 100%;
+    color: #444;
+    font-family: 'Malgun Gothic', Arial, sans-serif;
+    font-weight: normal;
+    line-height: 1.2em;
+}
+
+legend,
+hr,
+caption {
+    display: block;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: -1000em;
+}
+
+i,
+em,
+address {
+    font-style: normal;
+    font-weight: normal;
+}
+
+
+/* Base 
+====================================================================*/
+
+a {
+    transition: all 0.3s ease;
+    text-decoration: none;
+    cursor: pointer;
+    color: #444;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+::-webkit-input-placeholder {
+    color: #bbb;
+}
+
+:-ms-input-placeholder {
+    color: #bbb;
+}
+
+input[type=text]:disabled {
+    background: #e8e8e8;
+}
+
+
+/************ mCustomScrollbar *************/
+
+.mCSB_container {
+    padding-bottom: 64px;
+}
+
+.contentView .mCSB_inside>.mCSB_container {
+    margin-right: 0;
+}
+
+.contentView .mCSB_scrollTools {
+    z-index: 1;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+
+/* Layout 
+====================================================================*/
+
+
+/************** Common ***************/
+
+body {
+    background: #efefef;
+}
+
+#wrap {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#ContentsWrap {
+    position: relative;
+    height: 100%;
+    padding-top: 56px;
+    margin-bottom: 0;
+    padding-bottom: 50px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.contentView {
+    height: 100%;
+    overflow-y: scroll;
+    webkit-overflow-scrolling: touch;
+}
+
+.btn_icon span {
+    display: none;
+}
+
+
+/************** Header *************/
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 56px;
+    box-sizing: border-box;
+    z-index: 100;
+}
+
+.header_chatbot {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    background: #fff;
+    box-sizing: border-box;
+    border-bottom: 1px solid #ccc;
+}
+
+.header_chatbot h1 {
+    display: inline-block;
+    position: relative;
+    height: 15px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 15px;
+    color: #666;
+}
+
+.header_chatbot .btn_icon {
+    position: absolute;
+    cursor: pointer;
+    top: 18px;
+    width: 20px;
+    height: 21px;
+}
+
+.btn_help {
+    right: 108px;
+    background: url(../images/ico_help.png) no-repeat center;
+    background-size: 19px;
+}
+
+.btn_customerService {
+    right: 66px;
+    background: url(../images/ico_customerService.png) no-repeat center;
+    background-size: 18px;
+}
+
+.btn_chatbot {
+    display: none;
+    right: 66px;
+    background: url(../images/ico_chatbot.png) no-repeat center;
+    background-size: 18px;
+}
+
+.btn_close {
+    right: 27px;
+    background: url(../images/ico_close.png) no-repeat center;
+    background-size: 14px;
+}
+
+.mode_customerService .btn_customerService {
+    display: none;
+}
+
+.mode_customerService .btn_chatbot {
+    display: block;
+}
+
+
+/************** Footer *************/
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    z-index: 100;
+}
+
+footer .quick_answer {
+    height: 64px;
+    background-color: transparent;
+}
+
+.quick_answer .swiper-wrapper {
+    margin-left: -18px;
+}
+
+footer .quick_answer .carousel_card button {
+    display: inline-block;
+    min-width: 70px;
+    height: 33px;
+    line-height: 31px;
+    text-align: center;
+    padding: 0 14px;
+    background-color: #ff3a64;
+    border: none;
+    border-radius: 16px;
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+footer .carousel .swiper-slide {
+    width: auto !important;
+}
+
+footer .carousel_card {
+    width: auto;
+    padding: 0;
+    margin-top: 0;
+    background: none;
+}
+
+.footer_frame {
+    position: relative;
+    padding: 8px 116px 8px 10px;
+    background-color: #fff;
+}
+
+.footer_frame input {
+    width: 100%;
+    height: 33px;
+    padding: 5px 10px;
+    font-size: 1.3rem;
+    vertical-align: middle;
+    box-sizing: border-box;
+    background: #fff;
+    resize: none;
+}
+
+.footer_frame .btn_clear {
+    display: none;
+}
+
+.footer_frame .btn_clear span {
+    display: none;
+}
+
+.footer_frame.on .btn_clear {
+    display: block;
+    position: absolute;
+    top: 16px;
+    right: 92px;
+    width: 17px;
+    height: 17px;
+    padding-bottom: 3px;
+    background: url(../images/ico_clear.png) no-repeat center;
+    background-size: 17px;
+    cursor: pointer;
+}
+
+.footer_frame .btn_send {
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    width: 65px;
+    height: 33px;
+    background-color: #dddddd;
+    border-radius: 7px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.footer_frame.on .btn_send {
+    background-color: #ff3a64;
+    cursor: pointer;
+}
+
+
+/* Content 
+====================================================================*/
+
+
+/************** message (chatbot, customerService) *************/
+
+.message_view {
+    position: relative;
+    padding: 0;
+}
+
+.message_view li {
+    padding: 8px 0;
+}
+
+.message_view li:first-child {
+    padding-top: 11px;
+}
+
+.messageLeft {
+    position: relative;
+    word-break: break-all;
+}
+
+.message_view.chatbot .character {
+    position: absolute;
+    top: 0;
+    left: 14px;
+    width: 31px;
+    height: 32px;
+    background: url(../images/img_chatbot.png) no-repeat center;
+    background-size: 31px;
+    z-index: 10;
+}
+
+.message_view.customerService .character {
+    position: absolute;
+    top: 0;
+    left: 14px;
+    width: 31px;
+    height: 32px;
+    background: url(../images/img_customerService.png) no-repeat 0 0;
+    background-size: 31px;
+    z-index: 10;
+}
+
+.messageLeft_con {
+    margin-left: 52px;
+}
+
+.chat_name {
+    padding-top: 0;
+    padding-left: 4px;
+    font-size: 1.1rem;
+    color: #666;
+}
+
+.messageLeft_box {
+    display: flex;
+    position: relative;
+    margin-top: 6px;
+}
+
+.message_content {
+    padding: 6px 10px;
+    max-width: calc(100% - 72px);
+    border-radius: 6px;
+    box-sizing: border-box;
+    background: #fff;
+    word-wrap: break-word;
+    line-height: 2rem;
+    font-size: 1.3rem;
+    color: #444;
+}
+
+.card .message_content {
+    width: 245px;
+}
+
+.messageLeft_time {
+    width: 70px;
+    padding-left: 7px;
+    font-size: 1rem;
+    color: #999;
+    box-sizing: border-box;
+    align-self: flex-end;
+}
+
+.typing img {
+    width: 29px;
+    height: 5px;
+    vertical-align: middle;
+}
+
+.card_list_type {
+    position: relative;
+    margin: -8px -10px 8px -10px;
+    height: 63px;
+    border-bottom: 1px solid #d5d5d5;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    background: #fff;
+    overflow: hidden;
+}
+
+.card_list_type:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #484848;
+    opacity: 0.5;
+}
+
+.card_list_type .title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 23px 15px;
+    font-size: 1.071em;
+    font-weight: bold;
+    color: #fff;
+    letter-spacing: -2px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    box-sizing: border-box;
+    z-index: 1;
+}
+
+.message_content.card_list ul li {
+    display: flex;
+    padding: 5px 0;
+}
+
+.card_list_con {
+    flex: 1;
+    width: calc(100% - 68px);
+}
+
+.card_list_con .card_title {
+    padding-bottom: 2px;
+    font-size: 0.929em;
+    letter-spacing: -1px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+    line-height: 1.4;
+    word-wrap: break-word;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.card_list_con .card_con {
+    font-size: 0.786em;
+    color: #999;
+    letter-spacing: -1px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.card_list_con .card_con p {
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.card_right_img {
+    position: relative;
+    width: 55px;
+    height: 55px;
+    margin-left: 10px;
+    background: #dedede;
+}
+
+.typing {
+    padding: 0 10px;
+}
+
+
+/************** message (user) *************/
+
+.messageRight {
+    position: relative;
+    padding-right: 15px;
+    text-align: right;
+    word-break: break-all;
+    overflow: hidden;
+}
+
+.messageRight_con {
+    /*float:right;*/
+}
+
+.messageRight_time {
+    padding-right: 7px;
+    width: 70px;
+    font-size: 1rem;
+    color: #999;
+    box-sizing: border-box;
+    align-self: flex-end;
+}
+
+.messageRight_box {
+    display: flex;
+    position: relative;
+    margin-bottom: 6px;
+    justify-content: flex-end;
+}
+
+.messageRight_box:last-child {
+    margin-bottom: 0;
+}
+
+.messageRight_box .message_content {
+    padding: 8px 10px;
+    max-width: calc(100% - 72px);
+    text-align: left;
+    color: #fff;
+    border-radius: 6px;
+    box-sizing: border-box;
+    background: #666;
+}
+
+.customService .messageRight_box .message_content {
+    background: #666;
+}
+
+.resend_delete {
+    display: flex;
+    margin: 3px 8px;
+    width: 55px;
+    height: 27px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    background: #b3b3b3;
+    align-self: flex-end;
+}
+
+.resend_delete button {
+    display: inline-block;
+    width: 50%;
+    height: 100%;
+    background: #b3b3b3;
+    cursor: pointer;
+}
+
+.resend_delete button:first-child {
+    border-right: 1px solid #e0e0e0;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.resend_delete button:last-child {
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px
+}
+
+.resend_delete .btn_resend {
+    width: 28px;
+    height: 27px;
+    background: url(../images/resend.png) no-repeat;
+    background-size: 13px auto;
+    background-position: 8px 8px;
+}
+
+.resend_delete .btn_delete {
+    width: 27px;
+    height: 27px;
+    background: url(../images/delete.png) no-repeat;
+    background-size: 12px auto;
+    background-position: 7px 8px;
+}
+
+
+/**** 퀵 답변 *****/
+
+.quick_answer {
+    position: relative;
+    padding: 2px 10px 0 0;
+}
+
+.quick_answer a {
+    display: inline-block;
+    margin: 8px 2px 0 0;
+    padding: 6px 13px;
+    font-size: 0.857em;
+    color: #1baee2;
+    border: 1px solid #1baee2;
+    border-radius: 29px;
+    background: #fff;
+}
+
+.quick_answer a:hover {
+    color: #fff;
+    background: #1baee2;
+}
+
+.quick_answer a:active {
+    color: #fff;
+    background: #0989b6;
+}
+
+.messageLeft_box.card {}
+
+.card_title {
+    padding-bottom: 6px;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #444;
+}
+
+.card_con {
+    font-size: 1.2rem;
+    color: #444;
+    line-height: 1.8rem;
+}
+
+.card_button {
+    position: relative;
+}
+
+.btn_card_footer {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 33px;
+    margin: 8px 0;
+    font-size: 1.2rem;
+    color: #ff555d;
+    border: 1px solid #ff555d;
+    border-radius: 7px;
+    background: #fff;
+    cursor: pointer;
+}
+
+.btn_card_footer.btn_link span,
+.btn_card_footer.btn_call span {
+    position: relative;
+    padding-right: 22px;
+    display: inline-block;
+    height: 31px;
+    line-height: 29px;
+}
+
+.btn_card_footer.btn_link span:after,
+.btn_card_footer.btn_call span:after {
+    content: "";
+    position: absolute;
+    top: 7px;
+    right: 0;
+    width: 16px;
+    height: 16px;
+}
+
+.btn_card_footer.btn_link span:after {
+    background: url(../images/ico_link.png) no-repeat center;
+    background-size: 13px;
+}
+
+.btn_card_footer.btn_call span:after {
+    background: url(../images/ico_call.png) no-repeat center;
+    background-size: 14px;
+}
+
+.mode_change_box {
+    position: relative;
+    padding: 12px 16px;
+}
+
+.mode_change_box p {
+    position: relative;
+    padding: 6px 10px;
+    font-size: 1.1rem;
+    color: #777;
+    text-align: center;
+    border-radius: 20px;
+    background: #e1e1e1;
+}
+
+
+/**** 시스템오류 *****/
+
+.system_error {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    background: #f3f3f3;
+    z-index: 50;
+}
+
+.error_cont {
+    display: flex;
+    height: 100vh;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.error_view {
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+}
+
+.error_img {
+    width: 56px;
+    height: 64px;
+}
+
+.error_view .title {
+    padding-top: 28px;
+    font-weight: bold;
+    font-size: 1.214em;
+    color: #9c9c9c;
+}
+
+.point_txt {
+    color: #686868;
+}
+
+.error_view .m_txt {
+    padding-top: 10px;
+    font-size: 0.929em;
+    font-weight: bold;
+    color: #9c9c9c;
+}
+
+
+/* Carousel 
+====================================================================*/
+
+.swiper-container.carousel {
+    width: 100%;
+}
+
+.swiper-container.carousel .messageLeft_time {
+    padding-top: 8px;
+    padding-left: 247px;
+    width: inherit;
+}
+
+.carousel .swiper-slide {
+    width: 245px !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.carousel .swiper-button-next,
+.carousel .swiper-button-prev {
+    position: absolute;
+    width: 20px;
+    height: 40px;
+    opacity: 0.2;
+    background-color: #000;
+    background-image: none;
+    top: calc(50% - 20px);
+    margin-top: 0;
+}
+
+.mobile .carousel .swiper-button-next,
+.mobile .carousel .swiper-button-prev {
+    display: none;
+}
+
+.carousel .swiper-button-next {
+    right: 0;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.carousel .swiper-button-next:after {
+    content: "";
+    position: absolute;
+    top: calc(50% - 7px);
+    left: 8px;
+    width: 0;
+    height: 0;
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+    border-left: 7px solid #fff;
+}
+
+.carousel .swiper-button-prev {
+    left: 0;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.carousel .swiper-button-prev:after {
+    content: "";
+    position: absolute;
+    top: calc(50% - 7px);
+    right: 8px;
+    width: 0;
+    height: 0;
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+    border-right: 7px solid #fff;
+}
+
+.carousel_card {
+    display: inline-block;
+    position: relative;
+    margin-top: 7px;
+    padding: 8px;
+    width: 245px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    background: #fff;
+}
+
+.carousel_card_img {
+    position: relative;
+    margin: 0;
+    height: 164px;
+    background: #ececec;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.carousel_card .message_content {
+    padding: 0;
+    max-width: 100%;
+}
+
+.carousel_card_img+.message_content {
+    margin-top: 8px;
+}
+
+.carousel .swiper-button-next.swiper-button-disabled,
+.carousel .swiper-button-prev.swiper-button-disabled {
+    opacity: 0.1;
+}
+
+
+/* Popup 
+====================================================================*/
+
+.FullpopArea {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1000;
+}
+
+.FullpopArea.imgType {
+    background: #000;
+}
+
+.FullpopArea.imgType img {
+    width: 100%;
+}
+
+.popCont {
+    display: flex;
+    height: 100vh;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.popContView {
+    position: relative;
+    width: 210px;
+    padding-bottom: 40px;
+    background: #fff;
+    overflow: hidden;
+}
+
+.popConArea {
+    padding: 20px 15px;
+    text-align: center;
+}
+
+.popConArea .title {
+    font-size: 1.214em;
+    font-weight: bold;
+    color: #440099;
+}
+
+.pop_s_txt {
+    padding-top: 17px;
+    padding-bottom: 22px;
+    font-size: 0.857em;
+    color: #7f7f7f;
+    line-height: 1.7em;
+}
+
+.pop_m_txt {
+    padding-top: 22px;
+    font-size: 1.071em;
+    line-height: 1.6em;
+}
+
+.pop_l_txt {
+    padding: 28px 15px;
+    font-size: 1.214em;
+    line-height: 1.5em;
+}
+
+.loading_bar {
+    margin: 0 auto;
+    width: 38px;
+    height: 38px;
+    background: url(../images/loading_bar.png) no-repeat center;
+    background-size: 38px;
+    -webkit-animation: lds-dual-ring 3s linear infinite;
+    animation: lds-dual-ring 3s linear infinite;
+}
+
+@keyframes lds-dual-ring {
+    0% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0);
+    }
+    100% {
+        -webkit-transform: rotate(-360deg);
+        transform: rotate(-360deg);
+    }
+}
+
+@-webkit-keyframes lds-dual-ring {
+    0% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0);
+    }
+    100% {
+        -webkit-transform: rotate(-360deg);
+        transform: rotate(-360deg);
+    }
+}
+
+.popConArea .count {
+    color: #440099;
+}
+
+.popConBtn {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+}
+
+.popConBtn button {
+    flex: 1;
+    line-height: 40px;
+    color: #fff;
+    text-align: center;
+    background: #6e7a7e;
+    cursor: pointer;
+}
+
+.popConBtn button.yes {
+    background: #1baee2;
+}
+
+.btn_img_close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 35px;
+    height: 35px;
+}
+
+.btn_img_close button {
+    position: relative;
+    width: 35px;
+    height: 35px;
+    background: url(../images/ic_guide_close_w.png) no-repeat center;
+    background-size: 15px;
+    cursor: pointer
+}
+
+.popContView.survey {
+    padding-bottom: 120px;
+}
+
+.popContView.survey .title {
+    padding-top: 3px;
+    padding-bottom: 25px;
+}
+
+.popContView.survey .popConBtn {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 120px;
+}
+
+.popContView.survey .popConBtn button {
+    width: 100%;
+    height: 40px;
+}
+
+.popContView.survey .popConBtn button.out {
+    background: #626e72;
+}
+
+.Star_disp {
+    margin: 0 auto;
+}
+
+.Star_disp div {
+    display: inline-block;
+    width: 29px;
+    height: 26px;
+    cursor: pointer;
+}
+
+.Star_disp .star_normal {
+    background: url(../images/star_off.png) no-repeat center;
+    background-size: 26px auto;
+}
+
+.Star_disp .star_yellow {
+    background: url(../images/star_on.png) no-repeat center;
+    background-size: 26px auto;
+}
+
+
+/* Media Query 
+====================================================================*/
+
+@media screen and (max-width:359px) {
+    /* .messageRight_box .message_content {
+        max-width: 203px;
+    } */
+    /* .message_content {
+        max-width: 203px;
+    } */
+    .card .message_content {
+        width: 203px;
+    }
+    .carousel_card {
+        width: 203px;
+    }
+    .carousel_card_img {
+        height: 102px;
+    }
+    .carousel .swiper-slide {
+        width: 203px !important;
+    }
+    .swiper-container.carousel .messageLeft_time {
+        padding-left: 207px;
+    }
+}
