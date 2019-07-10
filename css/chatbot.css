@@ -332,7 +332,6 @@ footer .carousel_card {
     right: 10px;
     width: 65px;
     height: 33px;
-    padding-bottom: 3px;
     background-color: #dddddd;
     border-radius: 7px;
     font-size: 1.3rem;
@@ -411,7 +410,7 @@ footer .carousel_card {
 
 .message_content {
     padding: 6px 10px;
-    max-width: 245px;
+    max-width: calc(100% - 72px);
     border-radius: 6px;
     box-sizing: border-box;
     background: #fff;
@@ -572,7 +571,7 @@ footer .carousel_card {
 
 .messageRight_box .message_content {
     padding: 8px 10px;
-    max-width: 245px;
+    max-width: calc(100% - 72px);
     text-align: left;
     color: #fff;
     border-radius: 6px;
@@ -662,48 +661,76 @@ footer .carousel_card {
 .messageLeft_box.card {}
 
 .card_title {
-    padding-bottom: 10px;
+    padding-bottom: 6px;
     font-weight: bold;
+    font-size: 1.5rem;
+    color: #444;
 }
 
 .card_con {
-    font-size: 0.929em;
+    font-size: 1.2rem;
+    color: #444;
+    line-height: 1.8rem;
 }
 
 .card_button {
     position: relative;
-    margin: 0 -10px;
-    padding-top: 8px;
 }
 
 .btn_card_footer {
     display: block;
     position: relative;
     width: 100%;
-    padding: 17px 10px;
-    color: #1baee2;
-    border-top: 1px solid #eee;
+    height: 33px;
+    padding: 0 0 4px;
+    margin: 8px 0;
+    font-size: 1.2rem;
+    color: #ff555d;
+    border: 1px solid #ff555d;
+    border-radius: 7px;
     background: #fff;
     cursor: pointer;
 }
 
-.btn_card_footer:last-child {
-    padding-bottom: 10px;
+.btn_card_footer.btn_link span,
+.btn_card_footer.btn_call span {
+    position: relative;
+    padding-right: 20px;
+}
+
+.btn_card_footer.btn_link span:after,
+.btn_card_footer.btn_call span:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 16px;
+    height: 16px;
+}
+
+.btn_card_footer.btn_link span:after {
+    background: url(../images/ico_link.png) no-repeat center;
+    background-size: 14px;
+}
+
+.btn_card_footer.btn_call span:after {
+    background: url(../images/ico_call.png) no-repeat center;
+    background-size: 14px;
 }
 
 .mode_change_box {
     position: relative;
-    padding: 12px 10px;
+    padding: 12px 16px;
 }
 
 .mode_change_box p {
     position: relative;
     padding: 6px 10px;
-    font-size: 0.857em;
-    color: #6e6e6e;
+    font-size: 1.1rem;
+    color: #777;
     text-align: center;
     border-radius: 20px;
-    background: #eaeaea;
+    background: #e1e1e1;
 }
 
 
@@ -801,6 +828,11 @@ footer .carousel_card {
     margin-top: 0;
 }
 
+.mobile .carousel .swiper-button-next,
+.mobile .carousel .swiper-button-prev {
+    display: none;
+}
+
 .carousel .swiper-button-next {
     right: 0;
     border-top-left-radius: 20px;
@@ -841,7 +873,7 @@ footer .carousel_card {
     display: inline-block;
     position: relative;
     margin-top: 7px;
-    padding: 8px 10px;
+    padding: 8px;
     width: 245px;
     border-radius: 8px;
     box-sizing: border-box;
@@ -850,20 +882,20 @@ footer .carousel_card {
 
 .carousel_card_img {
     position: relative;
-    margin: -8px -10px 8px -10px;
-    height: 123px;
-    border-bottom: 1px solid #d5d5d5;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
-    background: #fff;
+    margin: 0;
+    height: 164px;
+    background: #ececec;
     overflow: hidden;
     cursor: pointer;
 }
 
 .carousel_card .message_content {
     padding: 0;
+    max-width: 100%;
+}
+
+.carousel_card_img+.message_content {
+    margin-top: 8px;
 }
 
 .carousel .swiper-button-next.swiper-button-disabled,
@@ -1069,12 +1101,12 @@ footer .carousel_card {
 ====================================================================*/
 
 @media screen and (max-width:359px) {
-    .messageRight_box .message_content {
+    /* .messageRight_box .message_content {
         max-width: 203px;
-    }
-    .message_content {
+    } */
+    /* .message_content {
         max-width: 203px;
-    }
+    } */
     .card .message_content {
         width: 203px;
     }
