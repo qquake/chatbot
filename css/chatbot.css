@@ -1014,8 +1014,18 @@ footer .card {
 /* Datepicker 
 ====================================================================*/
 
+.datepicker+.messageLeft_time {
+    margin-top: 6px;
+    padding: 0;
+}
+
+.datepicker .message_content {
+    max-width: calc(100% - 22px);
+}
+
 .ui-datepicker {
-    width: 282px;
+    max-width: 282px;
+    width: 100%;
 }
 
 .ui-datepicker-header {
@@ -1039,11 +1049,11 @@ footer .card {
 }
 
 .ui-datepicker-prev {
-    left: 88px;
+    left: 28%;
 }
 
 .ui-datepicker-next {
-    right: 88px;
+    right: 28%;
 }
 
 .ui-datepicker-prev span,
@@ -1117,8 +1127,7 @@ table.ui-datepicker-calendar td.ui-datepicker-week-end:last-child a {
 }
 
 table.ui-datepicker-calendar td a {
-    display: inline-block;
-    width: 40px;
+    display: block;
     height: 30px;
     line-height: 30px;
     box-sizing: border-box;
@@ -1150,8 +1159,8 @@ table.ui-datepicker-calendar td.ui-datepicker-current-day a:after {
     border: 1px solid #ff3a64;
     top: -1px;
     left: -1px;
-    width: 41px;
-    height: 31px;
+    width: calc(100% + 2px);
+    height: 32px;
     cursor: default;
 }
 
@@ -1160,8 +1169,8 @@ table.ui-datepicker-calendar td a:focus:after {
     border: 1px solid #ff3a64;
     top: -1px;
     left: -1px;
-    width: 41px;
-    height: 31px;
+    width: calc(100% + 2px);
+    height: 32px;
 }
 
 
