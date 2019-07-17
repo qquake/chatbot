@@ -2,7 +2,7 @@
 <html lang="ko">
 
 <head>
-    <!-- Required meta tags -->
+    <!-- required meta tags -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0, user-scalable=no" />
@@ -11,10 +11,12 @@
     <!-- mobile safari : remove status bar  -->
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
 
+    <!-- CSS (library) -->
+    <link rel="stylesheet" type="text/css" media="screen" href="library/swiper/swiper.min.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="library/jquery-mCustomScrollbar/jquery.mCustomScrollbar.min.css" />
+
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" media="screen" href="css/chatbot.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="css/swiper.min.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="css/jquery.mCustomScrollbar.min.css" />
 
     <title>chatbot template</title>
 </head>
@@ -32,8 +34,8 @@
             </div>
         </header>
 
-        <div id="ContentsWrap">
-            <div class="contentView mCustomScrollbar" data-mcs-theme="minimal-dark">
+        <div id="content_wrapper">
+            <div class="content_view mCustomScrollbar" data-mcs-theme="minimal-dark">
                 <!-- chatbot mode -->
                 <div class="message_view chatbot">
                     <ul>
@@ -109,8 +111,35 @@
                                                     <p>설명하는 텍스트 설명하는 텍스트 설명하는 텍스트 설명하는 텍스트 설명하는 텍스트</p>
                                                 </div>
                                                 <div class="card_button">
-                                                    <button class="btn btn_link">링크 버튼<i></i></button>
-                                                    <button class="btn btn_call">전화 버튼<i></i></button>
+                                                    <button class="btn">링크 버튼<i class="ico_link"></i></button>
+                                                    <button class="btn">전화 버튼<i class="ico_call"></i></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="messageLeft_time">오전 11:38</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- card : image, text, button -->
+                        <li>
+                            <div class="messageLeft">
+                                <span class="character"></span>
+                                <div class="messageLeft_con">
+                                    <div class="chat_name">UX봇</div>
+                                    <div class="messageLeft_box">
+                                        <div class="card">
+                                            <div class="card_img">
+                                                <img src="images/img_sample.jpg" alt="sample image">
+                                            </div>
+                                            <div class="message_content">
+                                                <div class="card_title">399,999원 <span class="txt_strikethrough">498,750원</span></div>
+                                                <div class="card_subtitle txt_highlight">99,750원↓</div>
+                                                <div class="card_con">
+                                                    <p>설명하는 텍스트 설명하는 텍스트 설명하는 텍스트 설명하는 텍스트 설명하는 텍스트</p>
+                                                </div>
+                                                <div class="card_button">
+                                                    <button class="btn btn_highlight">발화 버튼</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -209,7 +238,7 @@
                                                         <p>설명하는 텍스트 설명하는 텍스트 설명하는 텍스트 설명하는 텍스트 설명하는 텍스트</p>
                                                     </div>
                                                     <div class="card_button">
-                                                        <button class="btn btn_link">링크 버튼<i></i></button>
+                                                        <button class="btn">링크 버튼<i class="ico_link"></i></button>
                                                     </div>
                                                 </div>
                                             </div>
@@ -225,7 +254,7 @@
                                                         <p>설명하는 텍스트 설명하는 텍스트 설명하는 텍스트 설명하는 텍스트 설명하는 텍스트</p>
                                                     </div>
                                                     <div class="card_button">
-                                                        <button class="btn btn_link">링크 버튼<i></i></button>
+                                                        <button class="btn">링크 버튼<i class="ico_link"></i></button>
                                                     </div>
                                                 </div>
                                             </div>
@@ -241,7 +270,7 @@
                                                         <p>설명하는 텍스트 설명하는 텍스트 설명하는 텍스트 설명하는 텍스트 설명하는 텍스트</p>
                                                     </div>
                                                     <div class="card_button">
-                                                        <button class="btn btn_link">링크 버튼<i></i></button>
+                                                        <button class="btn">링크 버튼<i class="ico_link"></i></button>
                                                     </div>
                                                 </div>
                                             </div>
@@ -257,7 +286,7 @@
                                                         <p>설명하는 텍스트 설명하는 텍스트 설명하는 텍스트 설명하는 텍스트 설명하는 텍스트</p>
                                                     </div>
                                                     <div class="card_button">
-                                                        <button class="btn btn_link">링크 버튼<i></i></button>
+                                                        <button class="btn">링크 버튼<i class="ico_link"></i></button>
                                                     </div>
                                                 </div>
                                             </div>
@@ -273,7 +302,7 @@
                                                         <p>설명하는 텍스트 설명하는 텍스트 설명하는 텍스트 설명하는 텍스트 설명하는 텍스트</p>
                                                     </div>
                                                     <div class="card_button">
-                                                        <button class="btn btn_link">링크 버튼<i></i></button>
+                                                        <button class="btn">링크 버튼<i class="ico_link"></i></button>
                                                     </div>
                                                 </div>
                                             </div>
@@ -311,7 +340,7 @@
                                                         <p>설명하는 텍스트 설명하는 텍스트 설명하는 텍스트 설명하는 텍스트 설명하는 텍스트</p>
                                                     </div>
                                                     <div class="card_button">
-                                                        <button class="btn btn_link">링크 버튼<i></i></button>
+                                                        <button class="btn">링크 버튼<i class="ico_link"></i></button>
                                                     </div>
                                                 </div>
                                             </div>
@@ -327,7 +356,7 @@
                                                         <p>설명하는 텍스트 설명하는 텍스트 설명하는 텍스트 설명하는 텍스트 설명하는 텍스트</p>
                                                     </div>
                                                     <div class="card_button">
-                                                        <button class="btn btn_link">링크 버튼<i></i></button>
+                                                        <button class="btn">링크 버튼<i class="ico_link"></i></button>
                                                     </div>
                                                 </div>
                                             </div>
@@ -343,7 +372,7 @@
                                                         <p>설명하는 텍스트 설명하는 텍스트 설명하는 텍스트 설명하는 텍스트 설명하는 텍스트</p>
                                                     </div>
                                                     <div class="card_button">
-                                                        <button class="btn btn_link">링크 버튼<i></i></button>
+                                                        <button class="btn">링크 버튼<i class="ico_link"></i></button>
                                                     </div>
                                                 </div>
                                             </div>
@@ -359,7 +388,7 @@
                                                         <p>설명하는 텍스트 설명하는 텍스트 설명하는 텍스트 설명하는 텍스트 설명하는 텍스트</p>
                                                     </div>
                                                     <div class="card_button">
-                                                        <button class="btn btn_link">링크 버튼<i></i></button>
+                                                        <button class="btn">링크 버튼<i class="ico_link"></i></button>
                                                     </div>
                                                 </div>
                                             </div>
@@ -375,7 +404,7 @@
                                                         <p>설명하는 텍스트 설명하는 텍스트 설명하는 텍스트 설명하는 텍스트 설명하는 텍스트</p>
                                                     </div>
                                                     <div class="card_button">
-                                                        <button class="btn btn_link">링크 버튼<i></i></button>
+                                                        <button class="btn">링크 버튼<i class="ico_link"></i></button>
                                                     </div>
                                                 </div>
                                             </div>
@@ -407,7 +436,7 @@
                                                 <ul>
                                                     <li>
                                                         <div class="card_list_con">
-                                                            <div class="card_title">타이틀</div>
+                                                            <div class="card_title">타이틀<i class="ico_link"></i></div>
                                                             <div class="card_con">
                                                                 <p>설명하는 텍스트 설명하는 텍스트 설명하는 텍스트 설명하는 텍스트 설명하는 텍스트</p>
                                                             </div>
@@ -540,6 +569,63 @@
                                 </div>
                             </div>
                         </li>
+                        <!-- table type 03 (complexed header) -->
+                        <li>
+                            <div class="messageLeft">
+                                <span class="character"></span>
+                                <div class="messageLeft_con">
+                                    <div class="chat_name">UX봇</div>
+                                    <div class="messageLeft_box">
+                                        <div class="card card_list_type">
+                                            <div class="card_header">
+                                                <div class="card_header_con">
+                                                    <div class="card_title">테이블 타이틀</div>
+                                                    <div class="card_title_con">
+                                                        <p>설명하는 텍스트 설명하는 텍스트 설명하는 텍스트 설명하는 텍스트 설명하는 텍스트</p>
+                                                    </div>
+                                                </div>
+                                                <div class="card_header_right_img">
+                                                    <img src="images/img_sample.jpg" alt="sample image">
+                                                </div>
+                                            </div>
+                                            <div class="message_content">
+                                                <table>
+                                                    <caption>테이블</caption>
+                                                    <thead>
+                                                        <tr>
+                                                            <th scope="col">헤더</th>
+                                                            <th scope="col">헤더</th>
+                                                            <th scope="col">헤더</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>데이터</td>
+                                                            <td>데이터</td>
+                                                            <td>데이터</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>데이터</td>
+                                                            <td>데이터</td>
+                                                            <td>데이터</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>데이터</td>
+                                                            <td>데이터</td>
+                                                            <td>데이터</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                <div class="card_button">
+                                                    <button class="btn btn_highlight">버튼</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="messageLeft_time">오전 11:38</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
                         <!-- loading -->
                         <li>
                             <div class="messageLeft">
@@ -623,6 +709,26 @@
                                                 <div class="btn_block_inline">
                                                     <button class="btn">취소</button>
                                                     <button class="btn btn_highlight">확인</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="messageLeft_time">오전 11:38</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- popup -->
+                        <li>
+                            <div class="messageLeft">
+                                <span class="character"></span>
+                                <div class="messageLeft_con">
+                                    <div class="chat_name">UX봇</div>
+                                    <div class="messageLeft_box">
+                                        <div class="card">
+                                            <div class="message_content">
+                                                <div class="card_button">
+                                                    <button id="btnPopupFull" class="btn">팝업 (전체화면)<i class="ico_link"></i></button>
+                                                    <button id="btnPopupSmall" class="btn">팝업 (작은 사이즈 : 210px)<i class="ico_link"></i></button>
                                                 </div>
                                             </div>
                                         </div>
@@ -740,123 +846,34 @@
             </div>
         </footer>
 
-        <!--Full Popup [가이드]-->
-        <div class="guide_wrap">
-            <div class="guide_header">
-                <button class="btn_guide_close"></button>
-            </div>
-            <div class="guide_area">
-                <div class="guide_info">
-                    <p class="title">뉴스킨의 똑똑한 인공지능 UX봇,<b>UX봇</b>를 소개합니다.</p>
-                    <div class="guide_chatbot_img">
-                        <img src="images/ico_chatbot.png">
+        <!-- popup (full screen) -->
+        <div id="popup_full" class="popup" style="display:none;">
+            <div class="popup_wrapper">
+                <div class="popup_full">
+                    <div class="popup_header">
+                        <button class="btn_icon btn_back"><span>뒤로가기(팝업 닫기)</span></button>
+                        <h3>팝업 타이틀</h3>
                     </div>
-                    <p class="question">UX봇에게 다음과 같이 질문해보세요.</p>
-                </div>
-                <div class="guide_list">
-                    <ul>
-                        <li>
-                            <p class="title">회원가입방법</p>
-                            <p class="con">"<b>회원가입</b>하는 방법을 알려주세요."</p>
-                        </li>
-                        <li>
-                            <p class="title">회원가입방법</p>
-                            <p class="con">"<b>회원가입</b>하는 방법을 알려주세요."</p>
-                        </li>
-                        <li>
-                            <p class="title">회원가입방법</p>
-                            <p class="con">"<b>회원가입</b>하는 방법을 알려주세요."</p>
-                        </li>
-                        <li>
-                            <p class="title">회원가입방법</p>
-                            <p class="con">"<b>회원가입</b>하는 방법을 알려주세요."</p>
-                        </li>
-                        <li>
-                            <p class="title">회원가입방법</p>
-                            <p class="con">"<b>회원가입</b>하는 방법을 알려주세요."</p>
-                        </li>
-                        <li>
-                            <p class="title">회원가입방법</p>
-                            <p class="con">"<b>회원가입</b>하는 방법을 알려주세요."</p>
-                        </li>
-                        <li>
-                            <p class="title">회원가입방법</p>
-                            <p class="con">"<b>회원가입</b>하는 방법을 알려주세요."</p>
-                        </li>
-                        <li>
-                            <p class="title">회원가입방법</p>
-                            <p class="con">"<b>회원가입</b>하는 방법을 알려주세요."</p>
-                        </li>
-                        <li>
-                            <p class="title">회원가입방법</p>
-                            <p class="con">"<b>회원가입</b>하는 방법을 알려주세요."</p>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <!--Full Popup [이미지확대]-->
-        <div id="LayerFull_imgView" class="FullpopArea imgType" style="display:none;">
-            <div class="btn_img_close">
-                <button></button>
-            </div>
-            <div class="popCont">
-                <img src="images/img_sample.jpg">
-            </div>
-        </div>
-
-        <!--Full Popup [상담원 채팅 대기]-->
-        <div id="LayerFull_customerService" class="FullpopArea" style="display:none;">
-            <div class="popCont">
-                <div class="popContView">
-                    <div class="popConArea">
-                        <p class="title">상담원 채팅 대기</p>
-                        <p class="pop_s_txt">현재 모든 상담원들고객 응대 중입니다.</p>
-                        <p class="loading_bar"></p>
-                        <p class="pop_m_txt">현재 고객님은<b class="count">3번째</b>로 대기중입니다.잠시만 기다려주세요.</p>
+                    <div class="popup_body mCustomScrollbar" data-mcs-theme="minimal-dark">
+                        <p>팝업 내용</p>
                     </div>
-                    <div class="popConBtn">
-                        <button class="close">취소</button>
+                    <div class="popup_footer">
+                        <button class="btn_default">취소</button>
+                        <button class="btn_highlight">확인</button>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!--Full Popup [상담종료]-->
-        <div id="LayerFull_logout" class="FullpopArea" style="display:none;">
-            <div class="popCont">
-                <div class="popContView">
-                    <div class="popConArea">
-                        <p class="pop_l_txt">상담원과의 채팅을종료합니다.</p>
+        <!-- popup (small : 210px) -->
+        <div id="popup_small" class="popup" style="display:none;">
+            <div class="popup_wrapper">
+                <div class="popup_sm">
+                    <div class="popup_body">
+                        <p>팝업 내용</p>
                     </div>
-                    <div class="popConBtn">
-                        <button class="yes">예</button>
-                        <button class="cancel">아니오</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!--Full Popup [서비스 만족도]-->
-        <div id="LayerFull_survey" class="FullpopArea" style="display:none;">
-            <div class="popCont">
-                <div class="popContView survey">
-                    <div class="popConArea">
-                        <p class="title">서비스 만족도</p>
-                        <div class="Star_disp">
-                            <div class="star_normal star_yellow"></div>
-                            <div class="star_normal star_yellow"></div>
-                            <div class="star_normal star_yellow"></div>
-                            <div class="star_normal star_yellow"></div>
-                            <div class="star_normal"></div>
-                        </div>
-                        <p class="pop_m_txt">만족</p>
-                    </div>
-                    <div class="popConBtn">
-                        <button class="yes">평가완료</button>
-                        <button class="out">나가기</button>
-                        <button class="cancel">취소</button>
+                    <div class="popup_footer">
+                        <button class="btn_highlight">확인</button>
                     </div>
                 </div>
             </div>
@@ -864,91 +881,48 @@
 
     </div>
 
+    <!-- javascript (library) -->
+    <script type="text/javascript" src="library/jquery/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="library/jquery-ui/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="library/swiper/swiper.min.js"></script>
+    <script type="text/javascript" src="library/jquery-mCustomScrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script type="text/javascript" src="library/jquery-touchSwipe/jquery.touchSwipe.min.js"></script>
+
     <!-- javascript -->
-    <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
-    <script type="text/javascript" src="js/jquery-ui.min.js"></script>
     <script type="text/javascript" src="js/chatbot.js"></script>
-    <script type="text/javascript" src="js/swiper.min.js"></script>
-    <script type="text/javascript" src="js/jquery.mCustomScrollbar.concat.min.js"></script>
-    <script type="text/javascript" src="js/jquery.touchSwipe.min.js"></script>
 
-    <!--wrap END-->
-    <script>
-        // Full Popup [가이드]
+    <!-- custom javascript -->
+    <script type="text/javascript">
         $(document).ready(function() {
-            $(".btn_help").click(function() {
-                $(".guide_wrap").addClass("action");
+            // popup (full screen)
+            $("#btnPopupFull").click(function() {
+                $("#popup_full").css('display', 'block');
                 $("body").css({
                     overflow: 'hidden'
                 }).bind('touchmove', function(e) {
                     e.preventDefault()
                 });
             });
-            $(".btn_guide_close").click(function() {
-                $(".guide_wrap").removeClass("action");
-                $("body").css({
-                    overflow: 'auto'
-                }).unbind('touchmove');
-                $(".guide_area").removeClass("showScroll");
-                $(".guide_area").scrollTop(0);
-            });
-        });
 
-        $('.guide_area').scroll(function() {
-            var $el = $('.guide_area');
-
-            if ($(this).scrollTop() >= 20) $el.addClass('showScroll');
-            else $el.removeClass('showScroll');
-        });
-
-        // Full Popup [이미지 확대]
-        $(document).ready(function() {
-            $(".card_img").click(function() {
-                $("#LayerFull_imgView").css('display', 'block');
+            // popup (small)
+            $("#btnPopupSmall").click(function() {
+                $("#popup_small").css('display', 'block');
                 $("body").css({
                     overflow: 'hidden'
                 }).bind('touchmove', function(e) {
                     e.preventDefault()
                 });
             });
-            $(".btn_img_close").click(function() {
-                $("#LayerFull_imgView").css('display', 'none');
+
+            // popup close
+            $(".popup .btn_highlight").click(function() {
+                $(this).parents('.popup').css('display', 'none');
                 $("body").css({
                     overflow: 'auto'
                 }).unbind('touchmove');
             });
-        });
-
-        // Full Popup [상담원 채팅 대기]
-        $(document).ready(function() {
-            $(".connect").click(function() {
-                $("#LayerFull_customerService").css('display', 'block');
-                $("body").css({
-                    overflow: 'hidden'
-                }).bind('touchmove', function(e) {
-                    e.preventDefault()
-                });
-            });
-            $(".popConBtn .close").click(function() {
-                $("#LayerFull_customerService").css('display', 'none');
-                $("body").css({
-                    overflow: 'auto'
-                }).unbind('touchmove');
-            });
-        });
-
-        // Full Popup [상담원 채팅 종료]
-        $(document).ready(function() {
-            $(".btn_end").click(function() {
-                $("#LayerFull_logout").css('display', 'block');
-                $("body").css({
-                    overflow: 'hidden'
-                }).bind('touchmove', function(e) {
-                    e.preventDefault()
-                });
-            });
-            $(".popConBtn .cancel").click(function() {
-                $("#LayerFull_logout").css('display', 'none');
+            $(".popup .btn_default").click(function() {
+                $(this).parents('.popup').css('display', 'none');
                 $("body").css({
                     overflow: 'auto'
                 }).unbind('touchmove');

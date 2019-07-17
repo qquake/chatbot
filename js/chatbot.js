@@ -61,6 +61,14 @@ $(document).ready(function() {
             prevEl: '.swiper-button-prev',
         },
     });
+
+    // popup close
+    $(".popup .btn_back").click(function() {
+        $(this).parents('.popup').css('display', 'none');
+        $("body").css({
+            overflow: 'auto'
+        }).unbind('touchmove');
+    });
 });
 
 // toggle mode between chatbot/customer service
