@@ -149,6 +149,10 @@ body {
     flex-flow: column;
 }
 
+#wrap.pc {
+    min-width: 400px;
+}
+
 #content_wrapper {
     position: relative;
     height: 100%;
