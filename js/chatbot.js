@@ -45,8 +45,8 @@ $(document).ready(function() {
         },
     });
 
-    // initialize footer quick answer carousel
-    var swiper = new Swiper('.quick_answer.swiper-container', {
+    // initialize footer quick reply carousel
+    var swiper = new Swiper('.quick_reply.swiper-container', {
         slidesPerView: 'auto',
         CSSWidthAndHeight: true,
         slidesOffsetBefore: 30,

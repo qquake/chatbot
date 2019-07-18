@@ -111,26 +111,6 @@ input[type=text]:disabled {
 }
 
 
-/************ mCustomScrollbar *************/
-
-
-/* .content_view.mCSB_container {
-    padding-bottom: 64px;
-}
-
-.contentView .mCSB_inside>.mCSB_container {
-    margin-right: 0;
-}
-
-.contentView .mCSB_scrollTools {
-    z-index: 1;
-}
-
-::-webkit-scrollbar {
-    display: none;
-} */
-
-
 /* Layout 
 ====================================================================*/
 
@@ -284,7 +264,7 @@ footer {
     z-index: 100;
 }
 
-footer .quick_answer {
+footer .quick_reply {
     position: absolute;
     top: -64px;
     left: 0;
@@ -293,7 +273,7 @@ footer .quick_answer {
     background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.5) 20%, rgba(255, 255, 255, 1) 100%);
 }
 
-footer .quick_answer .card button {
+footer .quick_reply .card button {
     display: inline-block;
     min-width: 70px;
     height: 33px;
@@ -376,14 +356,14 @@ footer .card {
 }
 
 
-/************** quick answer *************/
+/************** quick reply *************/
 
-.quick_answer {
+.quick_reply {
     position: relative;
     padding: 0;
 }
 
-.quick_answer a {
+.quick_reply a {
     display: inline-block;
     margin: 8px 2px 0 0;
     padding: 6px 13px;
@@ -394,12 +374,12 @@ footer .card {
     background: #fff;
 }
 
-.quick_answer a:hover {
+.quick_reply a:hover {
     color: #fff;
     background: #1baee2;
 }
 
-.quick_answer a:active {
+.quick_reply a:active {
     color: #fff;
     background: #0989b6;
 }
@@ -637,10 +617,6 @@ footer .card {
     overflow: hidden;
 }
 
-.messageRight_con {
-    /*float:right;*/
-}
-
 .messageRight_time {
     padding-right: 7px;
     width: 70px;
@@ -685,54 +661,6 @@ footer .card {
     right: -6px;
     background: url(../images/bg_message_right.png) no-repeat center;
 }
-
-.resend_delete {
-    display: flex;
-    margin: 3px 8px;
-    width: 55px;
-    height: 27px;
-    border-radius: 8px;
-    box-sizing: border-box;
-    background: #b3b3b3;
-    align-self: flex-end;
-}
-
-.resend_delete button {
-    display: inline-block;
-    width: 50%;
-    height: 100%;
-    background: #b3b3b3;
-    cursor: pointer;
-}
-
-.resend_delete button:first-child {
-    border-right: 1px solid #e0e0e0;
-    border-top-left-radius: 8px;
-    border-bottom-left-radius: 8px;
-}
-
-.resend_delete button:last-child {
-    border-top-right-radius: 8px;
-    border-bottom-right-radius: 8px
-}
-
-.resend_delete .btn_resend {
-    width: 28px;
-    height: 27px;
-    background: url(../images/resend.png) no-repeat;
-    background-size: 13px auto;
-    background-position: 8px 8px;
-}
-
-.resend_delete .btn_delete {
-    width: 27px;
-    height: 27px;
-    background: url(../images/delete.png) no-repeat;
-    background-size: 12px auto;
-    background-position: 7px 8px;
-}
-
-.messageLeft_box.card {}
 
 .card_title {
     margin-bottom: 2px;
@@ -886,59 +814,6 @@ footer .card {
     text-align: center;
     border-radius: 20px;
     background: #e1e1e1;
-}
-
-
-/************** system error *************/
-
-.system_error {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: 100%;
-    height: 100%;
-    min-height: 100%;
-    background: #f3f3f3;
-    z-index: 50;
-}
-
-.error_cont {
-    display: flex;
-    height: 100vh;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-
-.error_view {
-    position: relative;
-    text-align: center;
-    overflow: hidden;
-}
-
-.error_img {
-    width: 56px;
-    height: 64px;
-}
-
-.error_view .title {
-    padding-top: 28px;
-    font-weight: bold;
-    font-size: 1.214em;
-    color: #9c9c9c;
-}
-
-.point_txt {
-    color: #686868;
-}
-
-.error_view .m_txt {
-    padding-top: 10px;
-    font-size: 0.929em;
-    font-weight: bold;
-    color: #9c9c9c;
 }
 
 
@@ -1244,7 +1119,7 @@ table.ui-datepicker-calendar td a:focus:after {
 }
 
 
-/* Rate 
+/* Rating
 ====================================================================*/
 
 .rate_emoticon,
