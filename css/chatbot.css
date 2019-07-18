@@ -152,7 +152,8 @@ body {
     min-width: 400px;
 }
 
-#content_wrapper {
+
+/* #content_wrapper {
     position: relative;
     height: 100%;
     margin-bottom: 0;
@@ -160,10 +161,39 @@ body {
     box-sizing: border-box;
     overflow-y: scroll;
     -webkit-overflow-scrolling: touch;
+} */
+
+#content_wrapper {
+    position: relative;
+    height: 100%;
+    margin-bottom: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: column;
+}
+
+#content_wrapper:before,
+#content_wrapper:after {
+    content: "";
+    position: relative;
+    width: 100%;
+    height: 56px;
+    display: block;
+    flex: 0 0 auto;
+}
+
+#content_wrapper:after {
+    height: 113px;
 }
 
 .content_view {
     padding-bottom: 113px;
+}
+
+.content_view {
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    flex: 1 1 auto;
 }
 
 .btn_icon span {
