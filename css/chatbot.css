@@ -149,19 +149,8 @@ body {
 }
 
 #wrap.pc {
-    min-width: 400px;
+    /* min-width: 400px; */
 }
-
-
-/* #content_wrapper {
-    position: relative;
-    height: 100%;
-    margin-bottom: 0;
-    padding-top: 56px;
-    box-sizing: border-box;
-    overflow-y: scroll;
-    -webkit-overflow-scrolling: touch;
-} */
 
 #content_wrapper {
     position: relative;
@@ -183,14 +172,11 @@ body {
 }
 
 #content_wrapper:after {
-    height: 113px;
+    height: 49px;
 }
 
 .content_view {
-    padding-bottom: 113px;
-}
-
-.content_view {
+    padding-bottom: 60px;
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
     flex: 1 1 auto;
@@ -293,14 +279,18 @@ footer {
     bottom: 0;
     left: 0;
     width: 100%;
-    height: auto;
+    height: 49px;
     box-sizing: border-box;
     z-index: 100;
 }
 
 footer .quick_answer {
+    position: absolute;
+    top: -64px;
+    left: 0;
     height: 64px;
     background-color: transparent;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.5) 20%, rgba(255, 255, 255, 1) 100%);
 }
 
 footer .quick_answer .card button {
