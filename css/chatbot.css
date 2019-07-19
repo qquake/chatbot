@@ -48,7 +48,7 @@ input,
 select,
 button,
 textarea {
-    font-family: 'Malgun Gothic', Arial, sans-serif;
+    font-family: "Malgun Gothic", Arial, sans-serif;
     vertical-align: middle;
     font-weight: normal;
     outline: 0;
@@ -62,7 +62,7 @@ html {
 body {
     height: 100%;
     color: #444;
-    font-family: 'Malgun Gothic', Arial, sans-serif;
+    font-family: "Malgun Gothic", Arial, sans-serif;
     font-weight: normal;
     line-height: 1.2em;
 }
