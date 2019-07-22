@@ -65,9 +65,9 @@ $(document).ready(function() {
     // popup close
     $('.popup .btn_back').click(function() {
         $(this).parents('.popup').css('display', 'none');
-        $('body').css({
-            overflow: 'auto'
-        }).unbind('touchmove');
+        // $('body').css({
+        //     overflow: 'auto'
+        // }).unbind('touchmove');
     });
 });
 
