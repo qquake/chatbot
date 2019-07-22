@@ -1196,7 +1196,7 @@ table.ui-datepicker-calendar td a:focus:after {
 ====================================================================*/
 
 .popup {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     right: 0;
@@ -1275,7 +1275,7 @@ table.ui-datepicker-calendar td a:focus:after {
 
 .popup_full .popup_body {
     text-align: left;
-    overflow-y: auto !important;
+    overflow-y: auto;
 }
 
 .popup_full .popup_body p {
